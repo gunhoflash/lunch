@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>점심을 골라보자</title>
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="js.js"></script>
+</head>
+
+<body
+    class="uk-flex uk-flex-column uk-flex-center uk-flex-middle uk-text-center uk-height-viewport uk-background-cover uk-padding-large"
+    style="background-image: url(bg_.jpg);">
+    <h1 class="uk-margin-remove-bottom uk-margin-top">점심을 골라보자</h1>
+    <h1 class="uk-margin-small uk-text-danger">말 바꾸기 없음!</h1>
+    <div class="uk-card uk-card-default uk-margin">
+        <button id="btn_pick" class="uk-button uk-button-large uk-button-primary">
+            <span>랜덤으로 뽑아줘!</span>
+            <div style="display: none;" uk-spinner></div>
+        </button>
+    </div>
+
+    <div id="cards" class="uk-flex uk-flex-center uk-width-1-1" style="display: none;">
+        <div id="card1"
+            class="uk-animation-fade uk-animation-scale-up uk-animation-fast uk-card uk-card-default uk-width-1-4@m">
+            <div class="uk-card-media-top">
+                <img src="bg.jpg" alt="image">
+            </div>
+            <div class="uk-card-body">
+                <p class="uk-card-content">남부터미널 맛집 중 맛집!<br>여기로 가죠!</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
